@@ -1,0 +1,162 @@
+/*CSS Página index*/
+
+.section__hero {
+  height: 100vh;
+}
+
+.section__hero-video {
+  object-fit: cover;
+}
+
+.section__hero-overlay {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.section__hero-content {
+  color: white;
+}
+
+.section__more-link {
+  text-decoration: none;
+}
+
+.section__more-card:hover {
+  outline: 2px solid #848B91;
+}
+
+.section__footer {
+  background-color: #1f1f1f;
+  color: #ffffff;
+}
+
+.section__footer-section {
+  flex: 1; 
+  min-width: 200px
+}
+
+.section__footer-title {
+  margin-bottom: 10px;
+}
+
+.section__footer-link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.section__footer-link:hover {
+  text-decoration: underline;
+}
+
+.section__footer-icon {
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.section__footer-image {
+  width: 35px; 
+  height: 35px
+}
+
+.section__footer-policy {
+  margin-top: 20px; 
+  border-top: 1px solid #444; 
+  padding-top: 10px;
+}
+
+/*CSS Página services*/
+
+.section__services-item {
+  margin-top: 48px;
+  margin-bottom: 48px;
+  border: 1px solid #848B91;
+  border-radius: 5px;
+}
+
+.section__services-text {
+  padding: 20px;
+}
+
+.section__services-image {
+  position: relative;
+}
+
+.section__services-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to right, #272B30, transparent);
+  pointer-events: none; 
+}
+
+.section__services-overlay-rigth {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to left, #272B30, transparent);
+  pointer-events: none; 
+}
+
+.section__services-img {
+  width: 400px;
+  height: auto;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+@media only screen and (max-width: 425px) {
+  .section__services-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section__services-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .section__services-overlay-top {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(to bottom, #272B30, transparent);
+    pointer-events: none;
+  }
+
+  .section__services-overlay-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #272B30, transparent);
+    pointer-events: none;
+  }
+
+  .section__services-text {
+    text-align: center;
+    padding: 10px;
+  }
+
+  .section__services-img {
+    border-radius: 5px;
+  }
+  
+}
+
+/*CSS Página contact*/
+
+.section__contact-image {
+  width: 450px;
+  height: auto;
+}
+
+@media only screen and (max-width: 425px) {
+  .section__contact-image {
+    display: none;
+  }
+}
